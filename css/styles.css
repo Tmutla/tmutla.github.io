@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 @font-face {
 	font-family: 'rockwell-boldregular';
 	src: url('../font/rockweb-webfont.woff2') format('woff2'),
@@ -27,3 +30,5 @@ p {
 	font-weight: normal;
 	font-style: normal;
 }
+
+@tailwind utilities;
