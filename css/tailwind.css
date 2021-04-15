@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'rockwell-boldregular';
+
+  src: url('../font/rockweb-webfont.woff2') format('woff2'),
+			 url('../font/rockweb-webfont.woff') format('woff'),
+			 url('../font/rockweb.ttf') format('ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stencilla-regular';
+
+  src: url('../font/stencilla-webfont.woff2') format('woff2'),
+			 url('../font/stencilla-webfont.woff') format('woff'),
+			 url('../font/stencilla.ttf') format('ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 /*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -585,40 +609,28 @@ video {
   }
 }
 
-@font-face {
-  font-family: 'rockwell-boldregular';
-
-  src: url('../font/rockweb-webfont.woff2') format('woff2'),
-			 url('../font/rockweb-webfont.woff') format('woff'),
-			 url('../font/rockweb.ttf') format('ttf');
-
-  font-weight: normal;
-
-  font-style: normal;
+:root {
+  --tmulta-red: #da291c;
 }
 
-@font-face {
-  font-family: 'stencillaregular';
-
-  src: url('../font/stencilla-webfont.woff2') format('woff2'),
-			 url('../font/stencilla-webfont.woff') format('woff'),
-			 url('../font/stencilla.ttf') format('ttf');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-h1 {
-  font-family: stencillaregular, arial, sans-serif;
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'stencilla-regular', arial, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-p {
-  font-family: rockwell-boldregular, arial, sans-serif;
+body {
+  font-family: 'rockwell-boldregular', sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+.tmulta-red-background-color {
+  background-color: var(--tmulta-red);
+}
+
+.tmulta-red-text-color {
+  color: var(--tmulta-red);
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
