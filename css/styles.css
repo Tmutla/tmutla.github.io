@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'rockwell-boldregular';
+	src: url('../font/rockweb-webfont.woff2') format('woff2'),
+			 url('../font/rockweb-webfont.woff') format('woff'),
+			 url('../font/rockweb.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'stencillaregular';
+	src: url('../font/stencilla-webfont.woff2') format('woff2'),
+			 url('../font/stencilla-webfont.woff') format('woff'),
+			 url('../font/stencilla.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1 {
+	font-family: stencillaregular, arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+p {
+	font-family: rockwell-boldregular, arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
