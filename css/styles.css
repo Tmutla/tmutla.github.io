@@ -35,6 +35,10 @@ body {
 	font-style: normal;
 }
 
+.tmulta-red-border-color {
+	border-color: var(--tmulta-red);
+}
+
 .tmulta-red-background-color {
 	background-color: var(--tmulta-red);
 }
