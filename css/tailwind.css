@@ -614,15 +614,19 @@ video {
 }
 
 h1 h2 h3 h4 h5 h6 {
-  font-family: 'stencilla-regular', arial, sans-serif;
+  font-family: 'stencilla-regular';
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'rockwell-boldregular', sans-serif;
+  font-family: 'rockwell-boldregular';
   font-weight: normal;
   font-style: normal;
+}
+
+.tmulta-red-border-color {
+  border-color: var(--tmulta-red);
 }
 
 .tmulta-red-background-color {
@@ -630,6 +634,11 @@ body {
 }
 
 .tmulta-red-text-color {
+  color: var(--tmulta-red);
+}
+
+button {
+  padding: 15px;
   color: var(--tmulta-red);
 }
 
@@ -4275,6 +4284,18 @@ body {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-hero1 {
+  background-image: url('/img/pexels-photo-1054397.jpeg');
+}
+
+.bg-hero2 {
+  background-image: url('/img/pexels-photo-5474284.jpeg');
+}
+
+.bg-hero3 {
+  background-image: url('/img/pexels-photo-5483071.jpeg');
 }
 
 .from-transparent {
@@ -35558,6 +35579,18 @@ body {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-hero1 {
+    background-image: url('/img/pexels-photo-1054397.jpeg');
+  }
+
+  .sm\:bg-hero2 {
+    background-image: url('/img/pexels-photo-5474284.jpeg');
+  }
+
+  .sm\:bg-hero3 {
+    background-image: url('/img/pexels-photo-5483071.jpeg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -66667,6 +66700,18 @@ body {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-hero1 {
+    background-image: url('/img/pexels-photo-1054397.jpeg');
+  }
+
+  .md\:bg-hero2 {
+    background-image: url('/img/pexels-photo-5474284.jpeg');
+  }
+
+  .md\:bg-hero3 {
+    background-image: url('/img/pexels-photo-5483071.jpeg');
   }
 
   .md\:from-transparent {
@@ -97780,6 +97825,18 @@ body {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-hero1 {
+    background-image: url('/img/pexels-photo-1054397.jpeg');
+  }
+
+  .lg\:bg-hero2 {
+    background-image: url('/img/pexels-photo-5474284.jpeg');
+  }
+
+  .lg\:bg-hero3 {
+    background-image: url('/img/pexels-photo-5483071.jpeg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -128891,6 +128948,18 @@ body {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-hero1 {
+    background-image: url('/img/pexels-photo-1054397.jpeg');
+  }
+
+  .xl\:bg-hero2 {
+    background-image: url('/img/pexels-photo-5474284.jpeg');
+  }
+
+  .xl\:bg-hero3 {
+    background-image: url('/img/pexels-photo-5483071.jpeg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -160000,6 +160069,18 @@ body {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-hero1 {
+    background-image: url('/img/pexels-photo-1054397.jpeg');
+  }
+
+  .\32xl\:bg-hero2 {
+    background-image: url('/img/pexels-photo-5474284.jpeg');
+  }
+
+  .\32xl\:bg-hero3 {
+    background-image: url('/img/pexels-photo-5483071.jpeg');
   }
 
   .\32xl\:from-transparent {
