@@ -47,9 +47,4 @@ body {
 	color: var(--tmulta-red);
 }
 
-button {
-	padding: 15px;
-	color: var(--tmulta-red);
-}
-
 @tailwind utilities;

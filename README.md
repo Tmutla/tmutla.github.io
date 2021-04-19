@@ -7,7 +7,7 @@ Adding custom clases should be put in to styles.css.
 ## Building CSS
 See: https://tailwindcss.com/docs/installation  
 Use command:  
-```npx tailwindcss-cli@latest build ./css/styles.css -o ./css/tailwinds.css```  
+```npx tailwindcss-cli@latest build ./css/styles.css -o ./css/tailwind.css```  
 Reason:  
 Builds Tailwinds so that we can use Tailwinds. Tailwinds is a utility first CSS design library.
 
