@@ -10,3 +10,5 @@ Use command:
 ```npx tailwindcss-cli@latest build ./styles.css -o ./tailwinds.css```  
 Reason:  
 Builds Tailwinds so that we can use Tailwinds. Tailwinds is a utility first CSS design library.
+
+- https://www.themes.dev/blog/responsive-navigation-menu-tailwind-css/
