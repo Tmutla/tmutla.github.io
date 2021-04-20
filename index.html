@@ -24,17 +24,13 @@
 	<style>
 		.hero {
 			background-image: url('./img/silkscreen.svg'), url('./img/pexels-photo-1054397.jpeg');
-		
-			background-size:4px 4px, 100%;
-			
-			/* background: -moz-linear-gradient(left,  red 0%, rgba(246, 242, 242, 0.00) 100%); */
-  			
+			background-size:4px 4px, 100%;  			
 		}		
 	</style>
 </head>
 
-<body class="bg-white-light">
-	<div class="flex flex-row items-center justify-end m-3">
+<body class="bg-white-light overflow-x-hidden">
+	<div class="hidden md:flex flex-row items-center justify-end m-3">
 		<button class="transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
 		<a class="p-3" href="tel:1-800-123-4567">1-800-123-4567</a>
 	</div>
@@ -43,7 +39,7 @@
 		
 
 		<nav
-      class="flex items-center justify-between flex-wrap p-6 w-full z-10"
+      class="flex items-center justify-between p-6 w-full z-10"
       x-data="{ isOpen: false }"
       @keydown.escape="isOpen = false"
       :class="{ 'shadow-lg bg-indigo-900' : isOpen , 'bg-gray-800' : !isOpen}"
@@ -84,11 +80,37 @@
 
       <!--Menu-->
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto"
-        :class="{ 'absolute bg-white top-0 right-0 bottom-0 left-96 block shadow-3xl': isOpen, 'hidden': !isOpen }"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto bg-red"
+        :class="{ 'absolute bg-white top-0 right-0 bottom-0 left-24 lg:left-96 block shadow-3xl': isOpen, 'hidden': !isOpen }"
         @click.away="isOpen = false"
         x-show.transition="true"
       >
+			
+				<button
+				@click="isOpen = !isOpen"
+				type="button"
+				class="transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+				:class="{ 'transition transform-180': isOpen }"
+				>
+					<svg
+						class="h-10 w-10"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							x-show="isOpen"
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+						/>
+						<path
+							x-show="!isOpen"
+							fill-rule="evenodd"
+							d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+						/>
+					</svg>
+				</button>
+
         <ul
           class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"
         >
@@ -141,17 +163,23 @@
             </a>
           </li>
         </ul>
+
+				<div class="py-2 px-4 flex flex-col border-t-4 border-solid border-red">
+					<button class="w-auto transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
+					<a class="p-3" href="tel:1-800-123-4567">1-800-123-4567</a>
+				</div>
       </div>
     </nav>
 		
 	</header>
 
-	<main class="bg-hero1 hero object-contain ">
-		
+	<main class="bg-hero1 hero h-full">
+		<div class="w-full h-full bg-red"></div>
 		<p class="pt-20 max-w-xl m-5 text-5xl text-white-dark text-opacity-85"">
 			Evolve beyond threats
 		</p>
 		<div class="m-0 p-0 max-w-2xl border-t-4 border-solid border-red">
+			
 			<p class="max-w-2xl m-5 text-2xl leading-10 text-white-dark text-opacity-85">
 				As security threats increase in sophistication and complexity, trying to keep up can mean falling behind. Strengthening your security program requires foresight into when, where, and how attacks will occur.
 			</p>
@@ -165,9 +193,6 @@
 	<footer>
 
 	</footer>
-
-	
-
 
   <script src="js/scripts.js"></script>
 </body>
