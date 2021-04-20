@@ -81,7 +81,7 @@
       <!--Menu-->
       <div
         class="h-max lg:flex lg:items-center lg:w-auto"
-        :class="{ 'absolute bg-white top-0 right-0 bottom-0 left-48 md:left-96 right-0 block shadow-3xl': isOpen, 'hidden': !isOpen }"
+        :class="{ 'absolute bg-white top-0 right-0 bottom-0 left-0 md:left-96 lg:left-96 right-0 block shadow-3xl': isOpen, 'hidden': !isOpen }"
         @click.away="isOpen = false"
         x-show.transition="true"
       >
@@ -176,7 +176,7 @@
 
 	<main class="bg-hero1 hero h-full">
 		<div class="w-full h-full bg-red"></div>
-		<p class="pt-20 max-w-xl m-5 text-5xl text-white-dark text-opacity-85"">
+		<p class="pt-20 pr-12 max-w-xl m-5 text-5xl text-white-dark text-opacity-85"">
 			Evolve beyond threats
 		</p>
 		<div class="m-0 p-0 max-w-2xl border-t-4 border-solid border-red">
