@@ -26,8 +26,10 @@
 			background-image: url('./img/silkscreen.svg'), url('./img/pexels-photo-1054397.jpeg');
 		
 			background-size:4px 4px, 100%;
-			background-repeat: repeat, no-repeat;
-			
+			/* background-repeat: repeat, no-repeat; */
+
+			/* background: -moz-linear-gradient(left,  red 0%, rgba(246, 242, 242, 0.00) 100%); */
+  			
 		}
 
 		
@@ -47,23 +49,52 @@
 			<span class="tmulta-red-text-color pl-3 text-4xl">TMULTA</span>
 		</a>
 
-		<button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
-			<svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-		</button>
-		<nav class="flex flex-row space-x-6 font-semibold">
-			<a href="#" class="tmulta-red-text-color hover:underline">SERVICES</a>
+		<button
+        @click="isOpen = !isOpen"
+        type="button"
+        class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+        :class="{ 'transition transform-180': isOpen }"
+      >
+        <svg
+          class="h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            x-show="isOpen"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            x-show="!isOpen"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
+		<!-- <nav class="flex flex-row space-x-6 font-semibold"> -->
+		<nav class="flex flex-wrap items-center justify-between p-5"></nav>
+			<!-- <a href="#" class="tmulta-red-text-color hover:underline">SERVICES</a>
 			<a href="#" class="text-gray-600 hover:underline">EVENTS</a>
 			<a href="#" class="text-gray-600 hover:underline">BLOG</a>
 			<a href="#" class="text-gray-600 hover:underline">RESOURCES</a>
 			<a href="#" class="text-gray-600 hover:underline">ABOUT US</a>
-			<a href="#" class="text-gray-600 hover:underline">CONTACT</a>
+			<a href="#" class="text-gray-600 hover:underline">CONTACT</a> -->
+			<div class="toggle hidden md:flex w-full md:w-auto text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">        
+				<a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Home</a>
+				<a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Products</a>
+				<a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Pricing</a>
+				<a href="#" class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact</a>
+			</div>
+
 		</nav>
 
 	</header>
 
-	<main class="mt-20 bg-hero3 hero h-full text-white text-opacity-90">
+	<main class="bg-hero1 hero object-contain text-white text-opacity-90">
 		
-		<p class="max-w-xl m-5 text-5xl">
+		<p class="pt-20 max-w-xl m-5 text-5xl">
 			Evolve beyond threats
 		</p>
 		<div class="m-0 p-0 max-w-2xl border-t-4 border-solid border-red-500">
