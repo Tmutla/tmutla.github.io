@@ -26,24 +26,20 @@
 			background-image: url('./img/silkscreen.svg'), url('./img/pexels-photo-1054397.jpeg');
 		
 			background-size:4px 4px, 100%;
-			/* background-repeat: repeat, no-repeat; */
-
+			
 			/* background: -moz-linear-gradient(left,  red 0%, rgba(246, 242, 242, 0.00) 100%); */
   			
-		}
-
-		
+		}		
 	</style>
 </head>
 
 <body class="bg-white-light">
 	<div class="flex flex-row items-center justify-end m-3">
-		<button class="p-3 bg-red text-black">REPORT A BREACH</button>
+		<button class="p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
 		<a class="p-3" href="tel:1-800-123-4567">1-800-123-4567</a>
 	</div>
 
-	<!-- <header class="flex flex-row justify-between items-center space-x-4 bg-white py-6 px-6"> -->
-		<header>		
+	<header>		
 		
 
 		<nav
@@ -64,7 +60,7 @@
       <button
         @click="isOpen = !isOpen"
         type="button"
-        class="block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+        class="transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
         :class="{ 'transition transform-180': isOpen }"
       >
         <svg
@@ -148,7 +144,6 @@
       </div>
     </nav>
 		
-
 	</header>
 
 	<main class="bg-hero1 hero object-contain ">
