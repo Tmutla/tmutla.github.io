@@ -56,7 +56,7 @@
       <button
         @click="isOpen = !isOpen"
         type="button"
-        class="transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+        class=" transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 block lg:hidden px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
         :class="{ 'transition transform-180': isOpen }"
       >
         <svg
@@ -80,12 +80,12 @@
 
       <!--Menu-->
       <div
-        class="h-full lg:flex lg:items-center lg:w-auto"
+        class="h-max lg:flex lg:items-center lg:w-auto"
         :class="{ 'absolute bg-white top-0 right-0 bottom-0 left-48 md:left-96 right-0 block shadow-3xl': isOpen, 'hidden': !isOpen }"
         @click.away="isOpen = false"
         x-show.transition="true"
       >
-				<div class="w-full flex flex-row bg-red justify-end">
+				<div class="mt-12 pr-12 w-full flex flex-row justify-end">
 					<button
 					@click="isOpen = !isOpen"
 					type="button"
