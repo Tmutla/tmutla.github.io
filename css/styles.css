@@ -19,10 +19,6 @@
 @tailwind base;
 @tailwind components;
 
-:root {
-  --tmulta-red: #da291c;
-}
-
 h1 h2 h3 h4 h5 h6 {
 	font-family: 'stencilla-regular';
 	font-weight: normal;
@@ -35,16 +31,6 @@ body {
 	font-style: normal;
 }
 
-.tmulta-red-border-color {
-	border-color: var(--tmulta-red);
-}
 
-.tmulta-red-background-color {
-	background-color: var(--tmulta-red);
-}
-
-.tmulta-red-text-color {
-	color: var(--tmulta-red);
-}
 
 @tailwind utilities;
