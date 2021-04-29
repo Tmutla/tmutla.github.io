@@ -38,6 +38,17 @@ module.exports = {
 			 'hero-soldier-computer-4': "url('/img/hero/soldier-computer-001-1920x1080.jpg')",
 			 'hero-soldier-computer-5': "url('/img/hero/soldier-computer-001-2560x1440.jpg')",
 			 'hero-soldier-computer-6': "url('/img/hero/soldier-computer-001-3840x2160.jpg')", 
+			}),
+			height: theme => ({
+				"vh-10": "10vh",
+				"vh-20": "20vh",
+				"vh-30": "30vh",
+				"vh-40": "40vh",
+				"vh-50": "50vh",
+				"vh-60": "60vh",
+				"vh-70": "70vh",
+				"vh-80": "80vh",
+				"vh-90": "90vh",
 			})
 		}
   },
