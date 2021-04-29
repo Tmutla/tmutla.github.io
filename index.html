@@ -24,10 +24,15 @@
 
 	<!-- styles here are for rapid prototyping and to be moved in to styles.css later -->
 	<style>
-		.hero {
-			background: url('./img/silkscreen.svg'), url("img/hero/soldier-computer-001-1280x720.jpg") center center;
+		/* .hero {
+			background: url('./img/effect/silkscreen.svg'), url("img/hero/soldier-computer-001-1280x720.jpg") center center;
 			background-size: 4px 4px, cover;
 			background-repeat: repeat, no-repeat; 
+		} */
+		.hero-overlay {
+			background: url('./img/effect/silkscreen.svg');
+			background-size: 4px 4px;
+			background-repeat: repeat; 
 		}
 	</style>
 </head>
@@ -175,7 +180,7 @@
 	</header>
 
 	<main class="">
-		<div class="relative">
+		<div class="relative h-vh-60">
 			<!-- 
 				.hero {
 					background: url('./img/silkscreen.svg'), url("img/hero/soldier-computer-001-1280x720.jpg") center center;
@@ -183,7 +188,9 @@
 					background-repeat: repeat, no-repeat; 
 				}
 			-->
-			<div class="bg-hero-soldier-computer-2 h-vh-60 bg-cover"></div>
+			<div class="absolute hero-overlay w-full h-full z-10"></div>
+			<div class="absolute bg-hero-soldier-computer-2 bg-cover w-full h-full"></div>
+			
 			<!-- <div class="bg-hero-soldier-computer-2 hero bg-auto">
 				
 				<p class="pt-20 pr-12 max-w-xl m-5 text-5xl text-white-dark text-opacity-85"">
