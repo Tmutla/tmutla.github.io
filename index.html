@@ -38,7 +38,12 @@
 			background-size: 4px 4px;
 			background-repeat: repeat; 
 		}
+		.underline-4 {
+			text-decoration: underline;
+			text-decoration-thickness: 4px;
+		}
 		[x-cloak] { display: none; }
+		
 	</style>
 </head>
 
@@ -59,56 +64,143 @@
 				</a>
       </div>
 
-			<ul class="hidden lg:flex lg:pt-0 list-reset justify-between flex-1 items-center text-2xl">
+			<!-- desktop menu -->
+			<ul class="hidden lg:flex lg:pt-0 list-reset justify-around flex-1 items-center text-2xl">
 				<li>
 					<a
-						class="inline-block py-2 px-4 text-white no-underline"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="services.html"
 						@click="isOpen = false"
-						>SERVICES
+					>
+						SERVICES
 					</a>
 				</li>
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="events.html"
 						@click="isOpen = false"
-						>EVENTS
+					>
+						EVENTS
 					</a>
 				</li>
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="blog.html"
 						@click="isOpen = false"
-						>BLOG
+					>
+						BLOG
 					</a>
 				</li>
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="resources.html"
 						@click="isOpen = false"
-						>RESOURCES
+					>
+						RESOURCES
 					</a>
 				</li>
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="about.html"
 						@click="isOpen = false"
-						>ABOUT
+					>
+						ABOUT
 					</a>
 				</li>
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-lightgray py-2 px-4"
 						href="contact.html"
 						@click="isOpen = false"
-						>CONTACT
+					>
+						CONTACT
 					</a>
 				</li>
 			</ul>
+
+			<section
+				x-data="slideout()"
+				x-cloak
+				@open-menu.window="open = $event.detail.open"
+				@keydown.window.tab="usedKeyboard = true"
+				@keydown.escape="open = false"
+				x-init="init()"
+			>
+			<div
+				x-show.transition.opacity.duration.500="open"
+				@click="open = false"
+				class="z-10 fixed inset-0 bg-black bg-opacity-25"
+			>
+			<div
+				class="z-20 fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-white overflow-hidden"
+				:class="{'translate-x-full': !open}"
+			>
+				<button
+					@click="open = false"
+					x-ref="closeButton"
+					:class="{'focus:outline-none': !usedKeyboard}"
+					class="fixed top-0 right-0 mr-4 mt-2 z-50">
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</button>
+				<div class="p-16 px-6 absolute top-0 h-full overflow-y-hidden">
+
+					<ul class="pb-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center text-2xl">
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="services.html"
+								>SERVICES
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="events.html"
+								>EVENTS
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="blog.html"
+								>BLOG
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="resources.html"
+								>RESOURCES
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="about.html"
+								>ABOUT
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="contact.html"
+								>CONTACT
+							</a>
+						</li>
+					</ul>
+
+					<div class="lg:hidden w-2/3 pt-6 py-2 px-4 flex flex-col border-t-4 border-solid border-red">
+						<button class="mb-3 w-full transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
+						<a class="pt-3 w-full" href="tel:1-888-713-9896">1-888-713-9896</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
 
 			<div class="flex p-2 mt-2 bg-white border-b-4 border-black border-solid lg:hidden">
 				
@@ -143,89 +235,7 @@
 
 	<main class="">
 
-		<section
-			x-data="slideout()"
-			x-cloak
-			@open-menu.window="open = $event.detail.open"
-			@keydown.window.tab="usedKeyboard = true"
-			@keydown.escape="open = false"
-			x-init="init()"
-		>
-			<div
-				x-show.transition.opacity.duration.500="open"
-				@click="open = false"
-				class="z-10 fixed inset-0 bg-black bg-opacity-25"></div>
-			<div
-				class="z-20 fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-white overflow-hidden"
-				:class="{'translate-x-full': !open}">
-				<button
-					@click="open = false"
-					x-ref="closeButton"
-					:class="{'focus:outline-none': !usedKeyboard}"
-					class="fixed top-0 right-0 mr-4 mt-2 z-50">
-					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-				</button>
-				<div class="p-16 px-6 absolute top-0 h-full overflow-y-hidden">
-
-					<ul class="pb-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center text-2xl">
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block py-2 px-4 text-white no-underline"
-								href="services.html"
-								@click="isOpen = false"
-								>SERVICES
-							</a>
-						</li>
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-								href="events.html"
-								@click="isOpen = false"
-								>EVENTS
-							</a>
-						</li>
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-								href="blog.html"
-								@click="isOpen = false"
-								>BLOG
-							</a>
-						</li>
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-								href="resources.html"
-								@click="isOpen = false"
-								>RESOURCES
-							</a>
-						</li>
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-								href="about.html"
-								@click="isOpen = false"
-								>ABOUT
-							</a>
-						</li>
-						<li class="mr-3 p-3">
-							<a
-								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-								href="contact.html"
-								@click="isOpen = false"
-								>CONTACT
-							</a>
-						</li>
-					</ul>
-
-					<div class="lg:hidden w-2/3 pt-6 py-2 px-4 flex flex-col border-t-4 border-solid border-red">
-						<button class="mb-3 w-full transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
-						<a class="pt-3 w-full" href="tel:1-888-713-9896">1-888-713-9896</a>
-					</div>
-
-				</div>
-			</div>
-		</section>
+		
 
 		<div class="relative h-vh-60 pb-10">
 			<!-- overlay effect -->
@@ -256,7 +266,7 @@
 				<div class="grid justify-items-center grid-cols-1 gap-12 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
 	
 					<!-- 1 card -->
-					<a href="./solutions/cybersecurity-testing-analysis.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
+					<a href="./solutions/solutions/program-compliance-assessment.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
 						<div class="text-white flex items-center absolute py-4 px-4 shadow-xl bg-red left-4 -top-6">
 							<!-- svg  -->
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -282,7 +292,7 @@
 					</a>
 
 					<!-- 3 card -->
-					<a href="./solutions/cybersecurity-testing-analysis.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
+					<a href="./solutions/cybersecurity-program-management.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
 						<div class="text-white flex items-center absolute py-4 px-4 shadow-xl bg-red left-4 -top-6">
 							<!-- svg  -->
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -295,7 +305,7 @@
 					</a>
 									
 					<!-- 4 card -->
-					<a href="./solutions/cybersecurity-testing-analysis.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
+					<a href="./solutions/cybersecurity-incident-response-forensics.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
 						<div class=" text-white flex items-center absolute py-4 px-4 shadow-xl bg-red left-4 -top-6">
 							<!-- svg  -->
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -309,7 +319,7 @@
 					</a>
 
 					<!-- 5 card -->
-					<a href="./solutions/cybersecurity-testing-analysis.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
+					<a href="./solutions/remediation-assistance-training.html" class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
 						<div class=" text-white flex items-center absolute py-4 px-4 shadow-xl bg-red left-4 -top-6">
 							<!-- svg  -->
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
