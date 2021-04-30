@@ -16,3 +16,8 @@ Builds Tailwinds so that we can use Tailwinds. Tailwinds is a utility first CSS 
 ```NODE_ENV=production npx tailwindcss-cli@latest build ./css/tailwind.css -o ./css/tailwind.css```
 
 - https://www.themes.dev/blog/responsive-navigation-menu-tailwind-css/
+
+## Resources
+- Menu:  
+https://www.alpinetoolbox.com/examples/  
+https://codepen.io/KevinBatdorf/pen/ZEQJZMe  

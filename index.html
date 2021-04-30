@@ -111,20 +111,34 @@
 					</a>
 				</li>
 			</ul>
+
+			
 			
 
 			<div class="flex p-2 mt-2 bg-white border-b-4 border-black border-solid lg:hidden">
-				<button class="mr-2" aria-label="Open Menu" @click="drawer">
-					<svg
-						fill="none"
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						viewBox="0 0 24 24"
-						class="w-16 h-16 lg:hidden"
+				
+				<button
+					class="mr-2"
+					aria-label="Open Menu"
+					x-data="{usedKeyboard: false}"
+					@keydown.window.tab="usedKeyboard = true"
+					@click="$dispatch('open-menu', { open: true })"
+					:class="{'focus:outline-none': !usedKeyboard}"
+				>
+					<svg 
+						xmlns="http://www.w3.org/2000/svg" 
+						width="48" 
+						height="48" 
+						viewBox="0 0 24 24" 
+						fill="none" stroke="#000" 
+						stroke-width="1.5" 
+						stroke-linecap="round" 
+						stroke-linejoin="round" 
+						class="feather feather-menu stroke-current"
 					>
-						<path d="M6 6h16M6 12h16M6 18h16"></path>
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
 					</svg>
 				</button>
 			</div>
@@ -133,7 +147,94 @@
 		
 	</header>
 
+
+
 	<main class="">
+
+		<section
+			x-data="slideout()"
+			x-cloak
+			@open-menu.window="open = $event.detail.open"
+			@keydown.window.tab="usedKeyboard = true"
+			@keydown.escape="open = false"
+			x-init="init()"
+		>
+			<div
+				x-show.transition.opacity.duration.500="open"
+				@click="open = false"
+				class="z-10 fixed inset-0 bg-black bg-opacity-25"></div>
+			<div
+				class="z-20 fixed transition duration-300 right-0 top-0 transform w-full max-w-xs h-screen bg-white overflow-hidden"
+				:class="{'translate-x-full': !open}">
+				<button
+					@click="open = false"
+					x-ref="closeButton"
+					:class="{'focus:outline-none': !usedKeyboard}"
+					class="fixed top-0 right-0 mr-4 mt-2 z-50">
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</button>
+				<div class="p-16 px-6 absolute top-0 h-full overflow-y-hidden">
+
+					<ul class="pb-3 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center text-2xl">
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block py-2 px-4 text-white no-underline"
+								href="services.html"
+								@click="isOpen = false"
+								>SERVICES
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="events.html"
+								@click="isOpen = false"
+								>EVENTS
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="blog.html"
+								@click="isOpen = false"
+								>BLOG
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="resources.html"
+								@click="isOpen = false"
+								>RESOURCES
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="about.html"
+								@click="isOpen = false"
+								>ABOUT
+							</a>
+						</li>
+						<li class="mr-3 p-3">
+							<a
+								class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+								href="contact.html"
+								@click="isOpen = false"
+								>CONTACT
+							</a>
+						</li>
+					</ul>
+
+					<div class="lg:hidden w-2/3 pt-6 py-2 px-4 flex flex-col border-t-4 border-solid border-red">
+						<button class="mb-3 w-full transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
+						<a class="pt-3 w-full" href="tel:1-800-123-4567">1-800-123-4567</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 		<div class="relative h-vh-60 pb-10">
 			<!-- overlay effect -->
 			<div class="absolute hero-overlay w-full h-full -z-10"></div>
