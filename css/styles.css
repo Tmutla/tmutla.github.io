@@ -24,6 +24,16 @@
 @tailwind base;
 @tailwind components;
 
+.hero-overlay {
+	background: url('./img/effect/silkscreen.svg');
+	background-size: 4px 4px;
+	background-repeat: repeat; 
+}
+
+[x-cloak] { 
+	display: none; 
+}
+
 h1 h2 h3 h4 h5 h6 {
 	font-family: 'stencilla-regular';
 	font-weight: normal;

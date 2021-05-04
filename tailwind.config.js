@@ -20,14 +20,10 @@ module.exports = {
 				DEFAULT: '#080808',
 				light: '#101010'
 			},
-			darkgray: {
+			gray: {
+				light: '#b3b3b3',
 				DEFAULT: '#181818',
-			},	
-			mediumgray: {
-				DEFAULT: '#404040',
-			},
-			lightgray: {
-				DEFAULT: '#b3b3b3',
+				medium: '#b3b3b3'
 			}
     },
     extend: {
