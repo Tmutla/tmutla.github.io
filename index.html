@@ -28,6 +28,11 @@
 
 	<!-- styles here are for rapid prototyping and to be moved in to styles.css later -->
 	<style>
+		.header-snap {
+			position: fixed;
+			top: 0;
+			
+		}
 
 	</style>
 </head>
@@ -40,7 +45,7 @@
 
 	<header>		
 
-		<nav class="mt-4 flex fixed w-full items-center justify-between px-6 h-16 text-gray-700 border-b border-gray-200 z-10">
+		<nav id="header" class="mt-4 flex fixed w-full items-center justify-between px-6 h-16 text-gray-700 border-b border-gray-200 z-10">
 
 			<!--Logo etc-->
       <div class="flex items-center justify-center flex-shrink-0 text-white mr-6 mt-10 md:mt-0 border-b-8 border-black border-solid">
@@ -51,10 +56,11 @@
       </div>
 
 			<!-- desktop menu -->
+			<!--  border-t-4 border-solid border-black -->
 			<ul class="hidden lg:flex lg:pt-0 list-reset justify-around flex-1 items-center text-2xl">
 				<li>
 					<a
-						class="inline-block text-gray-600 no-underline hover:text-gray-medium py-2 px-4"
+						class="inline-block text-gray-600 no-underline hover:text-white hover:bg-red hover:border-black hover:border-b-4 hover:border-solid outline py-2 px-4"
 						href="services.html"
 						@click="isOpen = false"
 					>
