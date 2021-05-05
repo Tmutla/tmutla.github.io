@@ -36,6 +36,10 @@ module.exports = {
 			 'hero-soldier-computer-6': "url('/img/hero/soldier-computer-001-3840x2160.jpg')", 
 			}),
 			height: theme => ({
+				"vh-2": "2vh",
+				"vh-4": "4vh",
+				"vh-6": "6vh",
+				"vh-8": "8vh",
 				"vh-10": "10vh",
 				"vh-20": "20vh",
 				"vh-30": "30vh",

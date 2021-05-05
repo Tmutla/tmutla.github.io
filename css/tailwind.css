@@ -5087,6 +5087,22 @@ body {
   height: 100vh;
 }
 
+.h-vh-2 {
+  height: 2vh;
+}
+
+.h-vh-4 {
+  height: 4vh;
+}
+
+.h-vh-6 {
+  height: 6vh;
+}
+
+.h-vh-8 {
+  height: 8vh;
+}
+
 .h-vh-10 {
   height: 10vh;
 }
@@ -24216,6 +24232,22 @@ body {
     height: 100vh;
   }
 
+  .sm\:h-vh-2 {
+    height: 2vh;
+  }
+
+  .sm\:h-vh-4 {
+    height: 4vh;
+  }
+
+  .sm\:h-vh-6 {
+    height: 6vh;
+  }
+
+  .sm\:h-vh-8 {
+    height: 8vh;
+  }
+
   .sm\:h-vh-10 {
     height: 10vh;
   }
@@ -43173,6 +43205,22 @@ body {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-vh-2 {
+    height: 2vh;
+  }
+
+  .md\:h-vh-4 {
+    height: 4vh;
+  }
+
+  .md\:h-vh-6 {
+    height: 6vh;
+  }
+
+  .md\:h-vh-8 {
+    height: 8vh;
   }
 
   .md\:h-vh-10 {
@@ -62134,6 +62182,22 @@ body {
     height: 100vh;
   }
 
+  .lg\:h-vh-2 {
+    height: 2vh;
+  }
+
+  .lg\:h-vh-4 {
+    height: 4vh;
+  }
+
+  .lg\:h-vh-6 {
+    height: 6vh;
+  }
+
+  .lg\:h-vh-8 {
+    height: 8vh;
+  }
+
   .lg\:h-vh-10 {
     height: 10vh;
   }
@@ -81093,6 +81157,22 @@ body {
     height: 100vh;
   }
 
+  .xl\:h-vh-2 {
+    height: 2vh;
+  }
+
+  .xl\:h-vh-4 {
+    height: 4vh;
+  }
+
+  .xl\:h-vh-6 {
+    height: 6vh;
+  }
+
+  .xl\:h-vh-8 {
+    height: 8vh;
+  }
+
   .xl\:h-vh-10 {
     height: 10vh;
   }
@@ -100050,6 +100130,22 @@ body {
 
   .\32xl\:h-screen {
     height: 100vh;
+  }
+
+  .\32xl\:h-vh-2 {
+    height: 2vh;
+  }
+
+  .\32xl\:h-vh-4 {
+    height: 4vh;
+  }
+
+  .\32xl\:h-vh-6 {
+    height: 6vh;
+  }
+
+  .\32xl\:h-vh-8 {
+    height: 8vh;
   }
 
   .\32xl\:h-vh-10 {
