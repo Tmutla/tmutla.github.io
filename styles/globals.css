@@ -45,16 +45,11 @@ a {
 }
 
 .hero-overlay {
-	background: url('../img/effect/silkscreen.svg');
+	background: url('/img/effect/silkscreen.svg');
 	background-size: 4px 4px;
 	background-repeat: repeat; 
 }
 
-.hero-overlay {
-	background: url('../img/effect/silkscreen.svg');
-	background-size: 4px 4px;
-	background-repeat: repeat; 
-}
 /* https://www.svgbackgrounds.com/#quantum-gradient */
 .hero-spacer-1 {
 	background-color: #820d21;

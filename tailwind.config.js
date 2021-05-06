@@ -28,12 +28,12 @@ module.exports = {
     },
     extend: {
 			backgroundImage: theme => ({
-			 'hero-soldier-computer-1': "url('../img/hero/soldier-computer-001-720x405.jpg')", 
-			 'hero-soldier-computer-2': "url('../img/hero/soldier-computer-001-960x540.jpg')", 
-			 'hero-soldier-computer-3': "url('../img/hero/soldier-computer-001-1280x720.jpg')", 
-			 'hero-soldier-computer-4': "url('../img/hero/soldier-computer-001-1920x1080.jpg')",
-			 'hero-soldier-computer-5': "url('../img/hero/soldier-computer-001-2560x1440.jpg')",
-			 'hero-soldier-computer-6': "url('../img/hero/soldier-computer-001-3840x2160.jpg')", 
+			 'hero-soldier-computer-1': "url('/img/hero/soldier-computer-001-720x405.jpg')", 
+			 'hero-soldier-computer-2': "url('/img/hero/soldier-computer-001-960x540.jpg')", 
+			 'hero-soldier-computer-3': "url('/img/hero/soldier-computer-001-1280x720.jpg')", 
+			 'hero-soldier-computer-4': "url('/img/hero/soldier-computer-001-1920x1080.jpg')",
+			 'hero-soldier-computer-5': "url('/img/hero/soldier-computer-001-2560x1440.jpg')",
+			 'hero-soldier-computer-6': "url('/img/hero/soldier-computer-001-3840x2160.jpg')", 
 			}),
 			height: theme => ({
 				"vh-2": "2vh",
