@@ -1,6 +1,6 @@
 function HeroBlockIntro() {
 	return (
-		<section className="relative w-full h-vh-40 overflow-hidden">
+		<section className="relative w-full h-vh-50 overflow-hidden">
 			
 				{/* overlay effect */}
 				<div className="absolute w-full h-full hero-overlay -z-10"></div>
@@ -9,11 +9,11 @@ function HeroBlockIntro() {
 
 				{/* content */}
 				{/* <div className="mt-12 absolute w-full h-full flex flex-col place-content-center"> */}
-				<div className="absolute w-full h-full">
-					<p className="text-vw-6 md:text-vw-4 lg:text-vw-3 max-w-3xl m-5 text-vw-4 text-black text-opacity-85">
+				<div className="absolute w-full h-full pt-20">
+					<p className="text-vw-6 md:text-vw-4 lg:text-vw-3 m-5 text-vw-4 text-black text-opacity-85">
 						Evolve beyond threats
 					</p>
-					<div className="text-vw-3 md:text-vw-2 lg:text-vw-2 max-w-xl border-t-4 border-solid border-red">
+					<div className="text-vw-3 md:text-vw-2 lg:text-vw-2 2xl:text-vw-1 max-w-xl lg:max-w-4xl xl:max-w-5xl border-t-4 border-solid border-red">
 					
 						<p className="m-5 leading-10 text-white-dark text-opacity-85">
 							As security threats increase in sophistication and complexity, trying to keep up can mean falling behind. Strengthening your security program requires foresight into when, where, and how attacks will occur.
