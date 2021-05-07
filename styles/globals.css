@@ -17,21 +17,21 @@ a {
 
 @font-face {
 	font-family: 'stencilla-regular';
-	src: url('../font/stencilla-webfont.woff2') format('woff2'),
-			 url('../font/stencilla-webfont.woff') format('woff'),
-			 url('../font/stencilla.ttf') format('ttf');
+	src: url('/font/stencilla-webfont.woff2') format('woff2'),
+			 url('/font/stencilla-webfont.woff') format('woff'),
+			 url('/font/stencilla.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'ITC Lubalin Graph Std';
-	src: url('../font/LubalinGraphStd-Demi.eot');
-	src: url('../font/LubalinGraphStd-Demi.eot?#iefix') format('embedded-opentype'),
-			url('../font/LubalinGraphStd-Demi.woff2') format('woff2'),
-			url('../font/LubalinGraphStd-Demi.woff') format('woff'),
-			url('../font/LubalinGraphStd-Demi.ttf') format('truetype'),
-			url('../font/LubalinGraphStd-Demi.svg#LubalinGraphStd-Demi') format('svg');
+	src: url('/font/LubalinGraphStd-Demi.eot');
+	src: url('/font/LubalinGraphStd-Demi.eot?#iefix') format('embedded-opentype'),
+			url('/font/LubalinGraphStd-Demi.woff2') format('woff2'),
+			url('/font/LubalinGraphStd-Demi.woff') format('woff'),
+			url('/font/LubalinGraphStd-Demi.ttf') format('truetype'),
+			url('/font/LubalinGraphStd-Demi.svg#LubalinGraphStd-Demi') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
