@@ -15,10 +15,10 @@ function HeroBlockIntro() {
 					</p>
 					<div className="text-vw-3 md:text-vw-2 lg:text-vw-2 2xl:text-vw-1 max-w-xl lg:max-w-4xl xl:max-w-5xl border-t-4 border-solid border-red">
 					
-						<p className="m-5 leading-10 text-white-dark text-opacity-85">
+						<p className="m-5 text-white-dark text-opacity-85">
 							As security threats increase in sophistication and complexity, trying to keep up can mean falling behind. Strengthening your security program requires foresight into when, where, and how attacks will occur.
 						</p>
-						<p className="m-5 leading-10 text-white-dark text-opacity-85">
+						<p className="m-5 text-white-dark text-opacity-85">
 							Tmutla is a full-service Information Security consulting team dedicated to helping you prioritize what matters to decrease risk and evolve your business beyond threats.
 						</p>
 					</div>
