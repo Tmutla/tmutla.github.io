@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '/styles/Home.module.css'
 
-import Nav from '../component/Nav/Nav'
 import Header from '/component/Header/Header'
 import HeaderBanner from '/component/HeaderBanner/HeaderBanner'
 import HeroBlockIntro from '/component/HeroBlockIntro/HeroBlockInro'
+import Products from '/component/Products/Products'
 import Footer from '/component/Footer/Footer'
 
 export default function Home() {
@@ -18,23 +18,16 @@ export default function Home() {
       </Head>
 
       <main className="">
-        {/* <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1> */}
-
-			{/* <Nav /> */}
 			
-			<Header />
-			<HeaderBanner />
-			<HeroBlockIntro />
-        
+				<Header />
+				<HeaderBanner />
+				<HeroBlockIntro />
+				<Products />
         
       </main>
 
 			<Footer />
 
-			
-      
     </div>
   )
 }
