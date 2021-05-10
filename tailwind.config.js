@@ -3,31 +3,55 @@ module.exports = {
 	purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-		colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      red: {
-        light: '#f8493c',
-        DEFAULT: '#da291c',
-        dark: '#a61005',
-      },
-			white: {
-				light: '#fcfcfc',
-				DEFAULT: '#f2f2f2',
-				dark: '#efefef'
-			},
-			black: {
-				dark: '#000000',
-				DEFAULT: '#080808',
-				light: '#101010'
-			},
-			gray: {
-				light: '#b3b3b3',
-				DEFAULT: '#181818',
-				medium: '#b3b3b3'
-			}
-    },
+		// colors: {
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   red: {
+    //     light: '#f8493c',
+    //     DEFAULT: '#da291c',
+    //     dark: '#a61005',
+    //   },
+		// 	white: {
+		// 		light: '#fcfcfc',
+		// 		DEFAULT: '#f2f2f2',
+		// 		dark: '#efefef'
+		// 	},
+		// 	black: {
+		// 		dark: '#000000',
+		// 		DEFAULT: '#080808',
+		// 		light: '#101010'
+		// 	},
+		// 	gray: {
+		// 		light: '#b3b3b3',
+		// 		DEFAULT: '#181818',
+		// 		medium: '#b3b3b3'
+		// 	}
+    // },
     extend: {
+			colors: theme => ({
+				transparent: 'transparent',
+				current: 'currentColor',
+				red: {
+					light: '#f8493c',
+					DEFAULT: '#da291c',
+					dark: '#a61005',
+				},
+				white: {
+					light: '#fcfcfc',
+					DEFAULT: '#f2f2f2',
+					dark: '#efefef'
+				},
+				black: {
+					dark: '#000000',
+					DEFAULT: '#080808',
+					light: '#101010'
+				},
+				gray: {
+					light: '#b3b3b3',
+					DEFAULT: '#181818',
+					medium: '#b3b3b3'
+				}
+			}),
 			backgroundImage: theme => ({
 			 'hero-soldier-computer-1': "url('/img/hero/soldier-computer-001-720x405.jpg')", 
 			 'hero-soldier-computer-2': "url('/img/hero/soldier-computer-001-960x540.jpg')", 

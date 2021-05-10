@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '/styles/Home.module.css'
 
 // import Nav from '../component/Nav/Nav'
+import Header from '/component/Header/Header'
 import HeroBlockIntro from '/component/HeroBlockIntro/HeroBlockInro'
 import Footer from '/component/Footer/Footer'
 
@@ -21,8 +22,9 @@ export default function Home() {
         </h1> */}
 {/* 
 				<Nav /> */}
-				<HeroBlockIntro />
-
+			
+			<Header />
+			<HeroBlockIntro />
         
         
       </main>
