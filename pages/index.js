@@ -4,6 +4,7 @@ import styles from '/styles/Home.module.css'
 
 import Nav from '../component/Nav/Nav'
 import Header from '/component/Header/Header'
+import HeaderBanner from '/component/HeaderBanner/HeaderBanner'
 import HeroBlockIntro from '/component/HeroBlockIntro/HeroBlockInro'
 import Footer from '/component/Footer/Footer'
 
@@ -24,6 +25,7 @@ export default function Home() {
 			{/* <Nav /> */}
 			
 			<Header />
+			<HeaderBanner />
 			<HeroBlockIntro />
         
         
