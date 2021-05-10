@@ -22,49 +22,39 @@ const menuLinks = [
   {
     name: 'SERVICES',
     description: 'Get a better understanding of the sericves Tmutla offers.',
-    href: '#',
+    href: '/services',
     icon: ChartBarIcon,
   },
   {
     name: 'EVENTS',
     description: 'Participate in one of our events, ask questions, get involved, and learn.',
-    href: '#',
+    href: '/events',
     icon: CursorClickIcon,
   },
   {
     name: 'BLOG',
     description: "See what we have been up to through out industry insights.",
-    href: '#',
+    href: '/blog',
     icon: ViewGridIcon,
   },
   {
     name: 'RESOURCES',
     description: 'Build your knowledge through our expertise',
-    href: '#',
+    href: '/resources',
     icon: RefreshIcon,
   },
 	{
     name: 'ABOUT',
     description: 'Learn about us, who we are, and what we do',
-    href: '#',
+    href: '/about',
     icon: RefreshIcon,
   },
 	{
     name: 'CONTACT',
-    description: 'React out and contact us',
-    href: '#',
+    description: 'Reach out and contact us',
+    href: '/contact',
     icon: RefreshIcon,
   },
-]
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
-
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -89,7 +79,7 @@ export default function Header() {
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-red hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -131,7 +121,7 @@ export default function Header() {
                           <div className="shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                               {menuLinks.map((item) => (
-                                <a
+                                <link
                                   key={item.name}
                                   href={item.href}
                                   className="-m-3 p-3 flex items-start hover:bg-gray-50"
@@ -141,7 +131,7 @@ export default function Header() {
                                     <p className="text-base font-medium text-gray-900">{item.name}</p>
                                     <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                   </div>
-                                </a>
+                                </link>
                               ))}
                             </div>
                           </div>
