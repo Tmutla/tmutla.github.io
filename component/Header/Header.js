@@ -72,7 +72,7 @@ export default function Header() {
                 <a href="#">
                   <span className="sr-only">Workflow</span>
                   <img
-                    className="w-auto h-16 md:h-24"
+                    className="w-16 h-16 md:w-24 md:h-24"
                     src="/img/logo/logo-256x256.png"
                     alt="Tmutla"
                   />
@@ -165,7 +165,7 @@ export default function Header() {
                   <div className="flex items-center justify-between">
                     <div>
                       <img
-                        className="h-16 w-auto"
+                        className="w-16 h-16 md:w-24 md:h-24"
                         src="/img/logo/logo-256x256.png"
                         alt="Tmutla"
                       />
