@@ -1,5 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -46,7 +44,7 @@ const productLinks = [
 	{
     name: 'REMEDIATION ASSISTANCE + TRAINING',
     description: 'Learn about us, who we are, and what we do',
-    href: '/solutions/remediation-assistance-training.html',
+    href: '/solutions/remediation-assistance-training',
     icon: SupportIcon,
   }
 ]
@@ -61,9 +59,9 @@ export default function Products() {
 					<Link
 						key={item.name}
 						href={item.href}
-						className="-m-3 p-3 flex items-start hover:bg-gray-50"
+						className="pointer -m-3 p-3 flex items-start hover:bg-gray-50"
 					>
-						<div class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
+						<a class="transition duration-500 ease-in-out transform hover:-translate-y-2 relative bg-white py-6 px-6 w-64 my-4 shadow-xl pb-16">
 						
 							<div class="absolute text-white flex items-center  py-4 px-4 shadow-xl bg-red left-4 -top-6">
 								<item.icon className="flex-shrink-0 h-12 w-12 text-white" aria-hidden="true" />
@@ -71,7 +69,7 @@ export default function Products() {
 							<div class="mt-16 flex flex-col">
 								<p class="text-xl font-semibold">{item.name}</p>
 							</div>
-						</div> 
+						</a> 
 
 					</Link>
 				))}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import groq from 'groq'
 import client from '../client'
 
-const Blog = (props) => {
+export default function Blog (props) {
     const { posts = [] } = props
     return (
       <div>
@@ -24,8 +24,6 @@ const Blog = (props) => {
 
 Blog.getInitialProps = async () => ({
     posts: await client.fetch(groq`
-      *[_type == "post"]|order(publishedAt desc)
+			*[_type == "post"]|order(publishedAt asc)
     `)
 })
-
-export default Blog

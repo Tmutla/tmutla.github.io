@@ -69,7 +69,7 @@ export default function Header() {
           <div className="w-full mx-auto sm:px-6">
             <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">Workflow</span>
                   <img
                     className="w-16 h-16 md:w-24 md:h-24"
