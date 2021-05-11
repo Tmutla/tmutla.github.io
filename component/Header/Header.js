@@ -112,11 +112,13 @@ export default function Header() {
                                   href={item.href}
                                   className="-m-3 p-3 flex items-start hover:bg-gray-50"
                                 >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-red" aria-hidden="true" />
-                                  <div className="ml-4">
-                                    <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                    <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                                  </div>
+																	<a>
+																		<item.icon className="flex-shrink-0 h-6 w-6 text-red" aria-hidden="true" />
+																		<div className="ml-4">
+																			<p className="text-base font-medium text-gray-900">{item.name}</p>
+																			<p className="mt-1 text-sm text-gray-500">{item.description}</p>
+																		</div>
+																	</a>
                                 </Link>
                               ))}
                             </div>
@@ -185,8 +187,10 @@ export default function Header() {
                           href={item.href}
                           className="-m-3 p-3 flex items-center hover:bg-gray-50"
                         >
-                          <item.icon className="flex-shrink-0 h-6 w-6 text-red-dark" aria-hidden="true" />
-                          <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+													<a>
+														<item.icon className="flex-shrink-0 h-6 w-6 text-red-dark" aria-hidden="true" />
+														<span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+													</a>
                         </Link>
                       ))}
                     </nav>
