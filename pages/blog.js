@@ -37,7 +37,7 @@ export default function Blog (props) {
 
 											<div class="py-8 flex flex-wrap md:flex-nowrap">
 												<div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-													<span class="font-semibold title-font text-gray-700">Categories</span>
+													<span class="font-semibold title-font text-gray-700">{categories[0].title}</span>
 													<span class="mt-1 text-gray-500 text-sm">{new Date(_updatedAt).toDateString()}</span>
 												</div>
 												<div class="md:flex-grow">
@@ -48,7 +48,7 @@ export default function Blog (props) {
 														<Link href="/post/[slug]" as={`/post/${slug.current}`}>
 															Learn More
 														</Link>{' '}
-														<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+														<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
 															<path d="M5 12h14"></path>
 															<path d="M12 5l7 7-7 7"></path>
 														</svg>
@@ -74,6 +74,6 @@ export default function Blog (props) {
 
 Blog.getInitialProps = async () => ({
     posts: await client.fetch(groq`
-			*[_type == "post"]|order(publishedAt asc)
+			*[_type == "post"] {title, description, categories[]->{title}, slug, _updatedAt} |order(publishedAt asc)
     `)
 })
