@@ -38,7 +38,7 @@ export default function Blog (props) {
 											<div class="py-8 flex flex-wrap md:flex-nowrap">
 												<div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
 													<span class="font-semibold title-font text-gray-700">{categories[0].title}</span>
-													<span class="mt-1 text-gray-500 text-sm">{new Date(_updatedAt).toDateString()}</span>
+													<span class="mt-1 text-gray-600 text-sm">{new Date(_updatedAt).toDateString()}</span>
 												</div>
 												<div class="md:flex-grow">
 													<h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{title}</h2>
