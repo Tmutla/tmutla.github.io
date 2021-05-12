@@ -42,7 +42,7 @@ export default function Blog (props) {
 												</div>
 												<div class="md:flex-grow">
 													<h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{title}</h2>
-													<p class="leading-relaxed">{description[0].children[0].text} goes here</p>
+													<p class="leading-relaxed">{description[0].children[0].text}</p>
 													
 													<a className="text-indigo-500 inline-flex mt-4">
 														<Link href="/post/[slug]" as={`/post/${slug.current}`}>
