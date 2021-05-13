@@ -4,7 +4,7 @@ function HeroBlockIntro() {
 			
 				{/* overlay effect */}
 				<div className="absolute w-full h-full hero-overlay -z-10"></div>
-				<div className="absolute w-full h-full bg-hero-soldier-computer-2 bg-cover -z-20"></div>
+				<div className="absolute w-full h-full bg-cover -z-20" style={{ backgroundImage: "url('/img/hero/location-grand-island-001-1200-462.jpg')" }}></div>
 				<div className="absolute w-full h-full bg-gradient-to-r from-red to-transparent opacity-90"></div>
 
 				{/* content */}
