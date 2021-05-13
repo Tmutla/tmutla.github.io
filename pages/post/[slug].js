@@ -1,3 +1,10 @@
+import Link from 'next/link'
+import Head from 'next/head'
+
+import Header from '/component/Header/Header'
+import HeroTitle from '/component/HeroTitle/HeroTitle'
+import Footer from '/component/Footer/Footer'
+
 import groq from 'groq'
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
@@ -16,30 +23,56 @@ const Post = (props) => {
     body = []
   } = props
   return (
-    <article>
-      <h1>{title}</h1>
-      <span>By {name}</span>
-      {categories && (
-        <ul>
-          Posted in
-          {categories.map(category => <li key={category}>{category}</li>)}
-        </ul>
-      )}
-      {authorImage && (
-        <div>
-          <img
-            src={urlFor(authorImage)
-              .width(50)
-              .url()}
-          />
-        </div>
-      )}
-      <BlockContent
-        blocks={body}
-        imageOptions={{ w: 320, h: 240, fit: 'max' }}
-        {...client.config()}
-      />
-    </article>
+		<div className="">
+
+				<Head>
+					<title>Tmutla</title>
+					<meta name="description" content="Tmutla Security" />
+					<link rel="icon" href="/favicon.ico" />
+				</Head>
+
+				<main className="">
+
+					<Header />
+
+					<HeroTitle
+						title={title}
+					/>
+
+					<section className="text-gray-600 body-font">
+						<div className=" px-5 mx-auto flex flex-col">
+						
+							<article>
+								<h1>{title}</h1>
+								<span>By {name}</span>
+								{categories && (
+									<ul>
+										Posted in
+										{categories.map(category => <li key={category}>{category}</li>)}
+									</ul>
+								)}
+								{authorImage && (
+									<div>
+										<img
+											src={urlFor(authorImage)
+												.width(50)
+												.url()}
+										/>
+									</div>
+								)}
+								<BlockContent
+									blocks={body}
+									imageOptions={{ w: 320, h: 240, fit: 'max' }}
+									{...client.config()}
+								/>
+							</article>
+
+						</div>
+					</section>
+					
+				</main>
+
+		</div>
   )
 }
 
