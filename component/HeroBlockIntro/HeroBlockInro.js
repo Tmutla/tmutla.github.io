@@ -9,7 +9,7 @@ function HeroBlockIntro() {
 
 				{/* content */}
 				{/* <div className="mt-12 absolute w-full h-full flex flex-col place-content-center"> */}
-				<div className="absolute w-full h-full pt-14">
+				<div className="absolute w-full h-full pt-4">
 					<p className="m-2 text-vw-8 md:text-vw-4 lg:text-vw-3 m-5 text-vw-4 text-black text-opacity-85">
 						Evolve beyond threats
 					</p>
