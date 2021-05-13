@@ -43,7 +43,7 @@ const Post = (props) => {
 						<div class='flex items-center w-full'>
 							<div class='w-full'>
 								<div class="flex flex-row mt-2 px-2 py-3 mx-3">
-									<div class="w-auto h-auto rounded-full border-2 border-pink-500">
+									<div class="w-auto h-auto rounded-full border-2 border-red-dark">
 										{authorImage && (
 											<div>
 												<img
