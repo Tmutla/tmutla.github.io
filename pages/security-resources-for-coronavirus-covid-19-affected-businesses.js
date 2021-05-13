@@ -1,14 +1,11 @@
+import Link from 'next/link'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '/styles/Home.module.css'
 
 import Header from '/component/Header/Header'
-import HeaderBanner from '/component/HeaderBanner/HeaderBanner'
-import HeroBlockIntro from '/component/HeroBlockIntro/HeroBlockInro'
-import Products from '/component/Products/Products'
+import HeroTitle from '/component/HeroTitle/HeroTitle'
 import Footer from '/component/Footer/Footer'
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="">
       <Head>
@@ -20,12 +17,29 @@ export default function Home() {
       <main className="">
 			
 				<Header />
-				<HeaderBanner />
-				 
-				<div>
-					Security Resources
-				</div>
-        
+
+				<HeroTitle
+					title="Security Resources for Coronavirus (Covid-19) Affected Businesses"
+				/>
+				
+				<section className="text-gray-600 body-font mt-10">
+					<div className="px-5 mx-auto flex flex-col">	
+
+						<p className="m-4">
+							In light of the major changes to workforces and technology, we’ve developed a number of resources to assist organizations that have been forced to change their normal operations and are faced with new security challenges.
+						</p>
+
+						<p className="m-4">
+							In addition to the content below written on this subject, we encourage anyone to join our Slack channel and Discord server. You’ll find even more industry resources within these communities and are great places to ask questions and get assistance.
+						</p>
+
+						<p className="m-4">
+							Blog posts specific to this are pending.
+						</p>
+					
+					</div>
+				</section>
+			        
       </main>
 
 			<Footer />
