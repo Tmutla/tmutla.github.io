@@ -38,39 +38,60 @@ const Post = (props) => {
 					<HeroTitle
 						title={title}
 					/>
-
-					<section className="text-gray-600 body-font">
-						<div className=" px-5 mx-auto flex flex-col">
-						
-							<article>
-								<h1>{title}</h1>
-								<span>By {name}</span>
-								{categories && (
-									<ul>
-										Posted in
-										{categories.map(category => <li key={category}>{category}</li>)}
-									</ul>
-								)}
-								{authorImage && (
-									<div>
-										<img
-											src={urlFor(authorImage)
-												.width(50)
-												.url()}
-										/>
+			
+					<section class='flex max-w-full mt-12 my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
+						<div class='flex items-center w-full'>
+							<div class='w-full'>
+								<div class="flex flex-row mt-2 px-2 py-3 mx-3">
+									<div class="w-auto h-auto rounded-full border-2 border-pink-500">
+										{authorImage && (
+											<div>
+												<img
+													class='w-12 h-12 object-cover rounded-full shadow cursor-pointer' alt='User avatar'
+													src={urlFor(authorImage)
+														.width(50)
+														.url()}
+												/>
+											</div>
+										)}
 									</div>
-								)}
-								<BlockContent
-									blocks={body}
-									imageOptions={{ w: 320, h: 240, fit: 'max' }}
-									{...client.config()}
-								/>
-							</article>
-
+									<div class="flex flex-col mb-2 ml-4 mt-1">
+										<div class='text-gray-600 text-sm font-semibold'>{name}</div>
+										<div class='flex w-full mt-1'>
+											<div class='text-gray-400 font-base text-xs mr-1 cursor-pointer'>
+												{categories && (
+													<ul className="flex">
+														Posted in: 
+														{categories.map(category => <li className="ml-2" key={category}>{category}</li>)}
+													</ul>
+												)}
+											</div> 
+											{/* <div class='text-gray-400 font-thin text-xs'>
+												• 30 seconds ago
+											</div> */}
+										</div>
+									</div>
+								</div>
+								<div class="border-b border-gray-100"></div> 
+								{/* <div class='text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2'><img class="rounded" src="https://picsum.photos/536/354" /></div> */}
+								<div class='text-gray-600 font-semibold text-lg mb-2 mx-3 px-2'>{title}</div>
+								<div class='text-gray-500 font-thin text-sm mb-6 mx-3 px-2'>
+									<BlockContent
+										blocks={body}
+										imageOptions={{ w: 320, h: 240, fit: 'max' }}
+										{...client.config()}
+									/>
+								</div>
+						
+							
+							</div>
 						</div>
 					</section>
+				
 					
 				</main>
+
+				<Footer />
 
 		</div>
   )
