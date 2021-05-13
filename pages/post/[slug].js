@@ -39,7 +39,7 @@ const Post = (props) => {
 						title={title}
 					/>
 			
-					<section class='flex max-w-full mt-12 my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
+					<section class='flex max-w-full mt-4 my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
 						<div class='flex items-center w-full'>
 							<div class='w-full'>
 								<div class="flex flex-row mt-2 px-2 py-3 mx-3">
