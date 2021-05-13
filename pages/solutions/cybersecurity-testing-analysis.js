@@ -114,10 +114,10 @@ export default function Page() {
 										Completing a proper security assessment is typically the first step in identifying areas of exposure in clients’ security postures. By regularly conducting security testing and analysis on the overall environment, or more thoroughly on a specific area of focus, our team can give yours a clear picture of how well your security controls and integrated defenses are performing.
 									</p>
 									<p class="leading-relaxed text-lg mb-4">
-										TrustedSec consultants are involved daily in planning, testing, engineering, and supporting operations with a clear focus on security for a wide range of environments and products, all while remaining vendor agnostic. Our Adversary Emulation, Threat & Research (AETR) team examines and develops innovative tactics that no one else has—allowing for the most advanced test available.
+										Tmutla consultants are involved daily in planning, testing, engineering, and supporting operations with a clear focus on security for a wide range of environments and products, all while remaining vendor agnostic. Our Adversary Emulation, Threat & Research (AETR) team examines and develops innovative tactics that no one else has—allowing for the most advanced test available.
 									</p>
 									<p class="leading-relaxed text-lg mb-4">
-										TrustedSec prides itself on a manual approach to technical security testing, which highlights the strength and knowledge of our consulting team rather than relying on automated solutions. The team consists of practitioners that are well respected in the security industry and have decades of experience. By giving our clients the most sophisticated testing available, we determine what findings are most important and provide the best information possible to understand the real-world effectiveness of their defenses.
+										Tmutla prides itself on a manual approach to technical security testing, which highlights the strength and knowledge of our consulting team rather than relying on automated solutions. The team consists of practitioners that are well respected in the security industry and have decades of experience. By giving our clients the most sophisticated testing available, we determine what findings are most important and provide the best information possible to understand the real-world effectiveness of their defenses.
 									</p>
 								</div>					
 								

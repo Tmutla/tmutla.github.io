@@ -85,13 +85,13 @@ export default function Page() {
 
 								<div class="sm:w-2/3 border-gray-200 sm:mt-0 text-left pr-4">
 									<p class="leading-relaxed text-lg mb-4">
-										TrustedSec helps organizations drive business performance and transform how they perceive and manage risk with our program assessment and compliance services. Because businesses are relying more and more on automation and IT, protecting data and system availability is a must. Having trust and confidence in your Information Security program can directly transfer into improved productivity, availability, and assurance. Measuring the maturity of your program with experienced partners on hand to help develop your program will greatly improve the performance of your Information Security program and risk management capabilities.
+										Tmutla helps organizations drive business performance and transform how they perceive and manage risk with our program assessment and compliance services. Because businesses are relying more and more on automation and IT, protecting data and system availability is a must. Having trust and confidence in your Information Security program can directly transfer into improved productivity, availability, and assurance. Measuring the maturity of your program with experienced partners on hand to help develop your program will greatly improve the performance of your Information Security program and risk management capabilities.
 									</p>
 									<p class="leading-relaxed text-lg mb-4">
 										Because technology, attacks, and business initiatives are changing all the time, conducting an assessment allows organizations to baseline their current state. Establishing this standard is important to not only provide a prioritized roadmap, but to also show progress to executives from an unbiased expert. This roadmap allows organizations to seize opportunities, stay a step ahead of uncertainty, and meet stakeholder expectations. By aligning the organizations’ compliance activities to business performance drivers, the security program is transformed from a reactive, check-the-box exercise into a powerful tool able to anticipate and mitigate risk to drive business performance.
 									</p>
 									<p class="leading-relaxed text-lg mb-4">
-										Unlike other firms, TrustedSec employs deep technical insights and real-world security experience, allowing us to more effectively create a roadmap to manage and reduce an organization’s risk. By using a common-sense approach and working to narrow the scope of compliance, we are able to provide practical, usable advice and direction.
+										Unlike other firms, Tmutla employs deep technical insights and real-world security experience, allowing us to more effectively create a roadmap to manage and reduce an organization’s risk. By using a common-sense approach and working to narrow the scope of compliance, we are able to provide practical, usable advice and direction.
 									</p>
 								</div>					
 								
