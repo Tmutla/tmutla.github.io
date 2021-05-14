@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="">
       <Head>
-        <title>Tmutla</title>
+        <title>Contact | Tmutla</title>
         <meta property="title" content="Tmutla Cybersecurity" key="title" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

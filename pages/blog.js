@@ -14,7 +14,7 @@ export default function Blog (props) {
       
 			<div className="">
 				<Head>
-					<title>Tmutla</title>
+					<title>Blog | Tmutla</title>
 					<meta property="title" content="Tmutla Cybersecurity" key="title" />
 					<link rel="icon" href="/favicon.ico" />
 				</Head>

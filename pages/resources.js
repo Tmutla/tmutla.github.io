@@ -111,7 +111,7 @@ export default function Resources() {
   return (
     <div className="">
       <Head>
-        <title>Tmutla</title>
+        <title>Rescources | Tmutla</title>
         <meta property="title" content="Tmutla Cybersecurity" key="title" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

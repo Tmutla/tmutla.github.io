@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className="">
       <Head>
-        <title>Tmutla</title>
+        <title>Security Resources | Tmutla</title>
         <meta property="title" content="Tmutla Cybersecurity" key="title" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -30,7 +30,7 @@ export default function Page() {
 						</p>
 
 						<p className="m-4">
-							In addition to the content below written on this subject, we encourage anyone to join our Slack channel and Discord server. You’ll find even more industry resources within these communities and are great places to ask questions and get assistance.
+							In addition to the content below written on this subject, we encourage anyone to join our and <a href="https://discord.gg/WwjsWUet">Discord server</a>. You’ll find even more industry resources within these communities and are great places to ask questions and get assistance.
 						</p>
 
 						<p className="m-4">

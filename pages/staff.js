@@ -12,7 +12,7 @@ export default function Staff() {
 		<div className="">
 
 			<Head>
-        <title>Tmutla</title>
+        <title>Staff | Tmutla</title>
         <meta property="title" content="Tmutla Cybersecurity" key="title" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
