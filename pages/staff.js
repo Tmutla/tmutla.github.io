@@ -30,7 +30,7 @@ export default function Staff() {
 						Meet the team at Tmutla!
 					</p>
 					<p class="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-200">
-						We are dedicated to top-notch quality, resolve, and professionalis.
+						We are dedicated to top-notch quality, resolve, and professionalism.
 					</p>
 						<div class="flex items-center flex-col md:flex-row justify-evenly">
 							<div class="p-4">
