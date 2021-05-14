@@ -24,7 +24,7 @@ export default function Page() {
 					title="CONTACT"
 				/>
 				
-				{/* <ContactForm /> */}
+				<ContactForm />
 				
 
       </main>

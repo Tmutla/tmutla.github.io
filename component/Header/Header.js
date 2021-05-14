@@ -50,6 +50,12 @@ const menuLinks = [
     icon: RefreshIcon,
   },
 	{
+    name: 'STAFF',
+    description: 'Who we are as a company.',
+    href: '/staff',
+    icon: RefreshIcon,
+  },
+	{
     name: 'CONTACT',
     description: 'Reach out and contact us',
     href: '/contact',

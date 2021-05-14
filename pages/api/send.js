@@ -4,14 +4,22 @@ export default async function(request, response) {
 
 	sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
-	const { email, message } = request.body
+	const { name, company, email, phone, message } = request.body
 
 	const content = {
-		to: ['hello@joelcorey.com'],
+		to: ['info@tmutla.com'],
 		from: 'hello@joelcorey.com',
 		subject: `${email} - Tmutla.com contact form!`,
-		text: message,
-		html: `<p>${message}</p>`
+		text: `${name} ${company} ${email} ${phone} ${message}`,
+		html: 
+			`
+				<p>${name} has submitted the contact form through Tmutla.com/contact!</p>
+				<p>Company: ${company}</p>
+				<p>Email: ${email}</p>
+				<p>Phone: ${phone}</p>
+				<p>And there message is as follows:</p>
+				<p>${message}</p>
+			`
 	}
 
 	try {
