@@ -46,8 +46,8 @@ export default function Page() {
 		
 		<div className="">
 		<Head>
-			<title>Tmutla Cybersecurity</title>
-			<meta name="description" content="Tmutla Security" />
+			<title>Tmutla</title>
+			<meta property="title" content="Tmutla Cybersecurity" key="title" />
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
 
