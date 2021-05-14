@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Tmutla</title>
+        <title>Tmutla Cybersecurity</title>
         <meta name="description" content="Tmutla Security" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
