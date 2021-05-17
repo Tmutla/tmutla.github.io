@@ -89,7 +89,7 @@ export default function Staff() {
 										Jacob Knipp
 									</p>
 									<p class="text-xl text-gray-500 dark:text-gray-200 font-light">
-										Marketing Director
+										Marketing Directory / Project Manager
 									</p>
 									{/* <p class="text-md text-gray-500 dark:text-gray-400 max-w-xs py-4 font-light">
 										Jean Castux is an imitator, humorist, actor, born November 14, 1953 in Pontivy.
