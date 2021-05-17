@@ -7,11 +7,21 @@ import HeroTitle from '/component/HeroTitle/HeroTitle'
 import Footer from '/component/Footer/Footer'
 
 const iconDimensions = 'w-16 h-16'
+const iconClassNameData = `
+	${iconDimensions} 
+	inline-flex 
+	items-center 
+	justify-center 
+	rounded-full 
+	bg-red text-white 
+	mb-4
+`
+
 const resourceLinks = [
   {
 		title: 'FEATURED CONTENT',
     name: 'BLOG',
-    icon: <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon: <div className={iconClassNameData}>
 						<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
 					</div>,
 		description: `With how-tos, zero-days, and other original pieces of infosec knowledge, our blog is a great resource for anyone interested in learning more about infosec and what our consultants are up to.`,
@@ -21,7 +31,7 @@ const resourceLinks = [
   {
 		title: 'FEATURED CONTENT',
     name: 'IN THE NEWS',
-    icon: <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon: <div className={iconClassNameData}>
 						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 							<circle cx="6" cy="6" r="3"></circle>
 							<circle cx="6" cy="18" r="3"></circle>
@@ -35,7 +45,7 @@ const resourceLinks = [
   {
 		title: '',
     name: 'ONLINE TRAINING',
-    icon:  <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon:  <div className={iconClassNameData}>
 							<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 								<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
 								<circle cx="12" cy="7" r="4"></circle>
@@ -48,7 +58,7 @@ const resourceLinks = [
   {
 		title: '',
     name: 'WEBINARS',
-    icon: <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon: <div className={iconClassNameData}>
 						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 							<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
 						</svg>
@@ -60,7 +70,7 @@ const resourceLinks = [
 	{
 		title: '',
     name: 'CASE STUDIES',
-    icon:  <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon:  <div className={iconClassNameData}>
 						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 							<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
 						</svg>
@@ -72,7 +82,7 @@ const resourceLinks = [
 	{
 		title: '',
     name: 'TMUTLA PODCAST',
-    icon:  <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon:  <div className={iconClassNameData}>
 							<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
 							</svg>
@@ -84,7 +94,7 @@ const resourceLinks = [
 	{
 		title: '',
     name: 'OPEN SOURCE TOOLS',
-    icon: <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon: <div className={iconClassNameData}>
 						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 							<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 						</svg>
@@ -96,7 +106,7 @@ const resourceLinks = [
 	{
 		title: '',
     name: 'WHITE PAPERS',
-    icon: <div className={iconDimensions + ' inline-flex items-center justify-center rounded-full bg-red text-white mb-4'}>
+    icon: <div className={iconClassNameData}>
 						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
 							<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 						</svg>
