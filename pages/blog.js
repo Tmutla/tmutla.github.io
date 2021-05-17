@@ -24,7 +24,7 @@ export default function Blog (props) {
 					<Header />
 
 					<HeroTitle
-						title="Blog"
+						title="BLOG"
 					/>
 
 					<section className="text-gray-600 body-font overflow-hidden">

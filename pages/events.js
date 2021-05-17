@@ -19,7 +19,7 @@ export default function Page() {
 				<Header />
 
 				<HeroTitle
-					title="Events"
+					title="EVENTS"
 				/>
 				
 				<section className="text-gray-600 body-font">

@@ -19,7 +19,7 @@ export default function Page() {
 				<Header />
 
 				<HeroTitle
-					title="Security Resources for Coronavirus (Covid-19) Affected Businesses"
+					title="RESOURCES FOR COVID-19 AFFECTED BUSINESSES"
 				/>
 				
 				<section className="text-gray-600 body-font mt-10">
@@ -30,12 +30,12 @@ export default function Page() {
 						</p>
 
 						<p className="m-4">
-							In addition to the content below written on this subject, we encourage anyone to join our and <a href="https://discord.gg/WwjsWUet">Discord server</a>. You’ll find even more industry resources within these communities and are great places to ask questions and get assistance.
+							In addition to the content below written on this subject, we encourage anyone to join our and <a className="underline" href="https://discord.gg/WwjsWUet">Discord server</a>. You’ll find even more industry resources within our community and are great places to ask questions and get assistance.
 						</p>
 
-						<p className="m-4">
+						{/* <p className="m-4">
 							Blog posts specific to this are pending.
-						</p>
+						</p> */}
 					
 					</div>
 				</section>
