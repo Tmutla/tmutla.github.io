@@ -8,7 +8,7 @@ export default async function(request, response) {
 
 	const content = {
 		to: ['info@tmutla.com'],
-		from: 'hello@joelcorey.com',
+		from: 'info@tmutla.com',
 		subject: `${email} - Tmutla.com contact form!`,
 		text: `${name} ${company} ${email} ${phone} ${message}`,
 		html: 
