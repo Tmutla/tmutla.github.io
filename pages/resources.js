@@ -87,7 +87,7 @@ const resourceLinks = [
 								<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
 							</svg>
 						</div>,
-		description: `Our team records a regular podcast covering the latest security news and stories in an entertaining and informational discussion. Hear what our experts are thinking and talking about.`,
+		description: `In the future we may record a regular podcast covering the latest security news and stories. In the near-term you will find our podcast recommendations here.`,
 		hrefTitle: 'LISTEN TO PODCASTS',
     href: '/podcasts',
   },
