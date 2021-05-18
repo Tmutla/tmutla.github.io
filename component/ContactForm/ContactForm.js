@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
-export default function ContactForm() {
+export default function ContactForm(props) {
+
+	const { contactTitle, contactMessage, message } = props;
 
 	const [status, setStatus] = useState({
     submitted: false,
@@ -12,7 +14,7 @@ export default function ContactForm() {
 		name: '',
 		company: '',
     email: '',
-		phone: '',
+		number: '',
     message: ''
   })
 
@@ -66,8 +68,8 @@ export default function ContactForm() {
 
 			<div class="container px-5 py-24 mx-auto">
 			<div class="flex flex-col text-center w-full mb-12">
-				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-				<p class="lg:w-2/3 mx-auto leading-relaxed text-base">Contact the Experts at Tmutla</p>
+				<h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">{contactTitle}</h1>
+				<p class="lg:w-2/3 mx-auto leading-relaxed text-base">{contactMessage}</p>
 			</div>
 
 				<form onSubmit={handleOnSubmit}>
@@ -132,7 +134,7 @@ export default function ContactForm() {
 							</div>
 							<div class="p-2 w-full">
 								<div class="relative">
-									<label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+									<label for="message" class="leading-7 text-sm text-gray-600">{message}</label>
 									<textarea 
 										id="message" 
 										name="message" 
