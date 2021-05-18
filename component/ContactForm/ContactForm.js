@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function ContactForm(props) {
+
+	const router = useRouter()
 
 	const { contactTitle, contactMessage, message } = props;
 
@@ -62,6 +65,28 @@ export default function ContactForm(props) {
     const text = await res.text()
     handleResponse(res.status, text)
   }
+
+	useEffect(() => {
+
+	if (status.submitting) {
+		console.log('submitting')
+	}
+
+	if (status.submitted) {
+		setInputs({
+			name: '',
+			company: '',
+			email: '',
+			number: '',
+			message: ''
+		})
+
+		setTimeout(() => {  router.push('/'); }, 2000);
+
+		// router.push('/')
+	}
+
+	}, [status.submitting, status.submitted])
 	
 	return (
 		<section className="text-gray-600 body-font">
