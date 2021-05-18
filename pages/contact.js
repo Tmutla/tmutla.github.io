@@ -28,6 +28,7 @@ export default function Page() {
 					contactTitle="Contact Us"
 					contactMessage="Contact the Experts at Tmutla"
 					message="Message"
+					type="contact form"
 				/>
 				
       </main>

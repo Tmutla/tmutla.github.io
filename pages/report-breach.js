@@ -28,6 +28,7 @@ export default function Page() {
 					contactTitle="Report a Breach"
 					contactMessage="Contact the Incident Response Team"
 					message="Please provide a brief description of the incident or breach"
+					type="INCIDENT / BREACH REPORT"
 				/>
 				
       </main>

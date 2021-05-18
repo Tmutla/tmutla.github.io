@@ -5,7 +5,7 @@ export default function ContactForm(props) {
 
 	const router = useRouter()
 
-	const { contactTitle, contactMessage, message } = props;
+	const { contactTitle, contactMessage, message, typeOfContact } = props;
 
 	const [status, setStatus] = useState({
     submitted: false,
@@ -18,7 +18,8 @@ export default function ContactForm(props) {
 		company: '',
     email: '',
 		number: '',
-    message: ''
+    message: '',
+		typeOfContact: typeOfContact
   })
 
   const handleResponse = (status, msg) => {
