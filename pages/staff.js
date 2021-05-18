@@ -19,7 +19,7 @@ const staffLinks = [
 	{
 		headshot: '/img/staff/jknipp.jpg',
     name: 'Jacob Knipp',
-		title: 'Marketing Directory / Project Manager',
+		title: 'Marketing Director / Project Manager',
 		blurb: `Some person, born on some date in Some city, with a passion for something.`,
 		linkedInHref: '',
 		twitterHref: '',
