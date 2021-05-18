@@ -68,9 +68,9 @@ export default function ContactForm(props) {
 
 	useEffect(() => {
 
-	if (status.submitting) {
-		// console.log('submitting')
-	}
+	// if (status.submitting) {
+	// 	console.log('submitting')
+	// }
 
 	if (status.submitted) {
 		setInputs({
@@ -82,8 +82,6 @@ export default function ContactForm(props) {
 		})
 
 		setTimeout(() => {  router.push('/'); }, 2000);
-
-		// router.push('/')
 	}
 
 	}, [status.submitting, status.submitted])
