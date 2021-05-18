@@ -202,7 +202,9 @@ export default function Header() {
                 </div>
                 <div className="py-6 px-5 space-y-6">
 									<div class="lg:hidden w-2/3 pt-6 py-2 px-4 flex flex-col border-t-4 border-solid border-red">
-										<button class="mb-3 w-full transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
+										<Link href="/report-breach">
+											<button class="mb-3 w-full transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-light">REPORT A BREACH</button>
+										</Link>
 										<a class="pt-3 w-full" href="tel:1-888-713-9896">1-888-713-9896</a>
 									</div>
                 </div>
@@ -214,3 +216,14 @@ export default function Header() {
     </Popover>
   )
 }
+
+/*
+
+<div class="hidden md:flex flex-row items-center justify-end m-5 sm:hiden md:hidden lg:flex">
+	<Link href="/report-breach">
+		<button class="transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 p-3 bg-red text-black hover:bg-red-dark">REPORT A BREACH</button>
+	</Link>
+	<a class="p-3 pl-8" href="tel:1-800-123-4567">1-800-123-4567</a>
+</div>
+
+*/
