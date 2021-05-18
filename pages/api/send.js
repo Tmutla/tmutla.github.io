@@ -10,7 +10,7 @@ export default async function(request, response) {
 		to: ['info@tmutla.com'],
 		from: 'info@tmutla.com',
 		subject: `${email} - Tmutla.com contact form!`,
-		text: `${name} ${company} ${email} ${phone} ${message}`,
+		text: `${name} ${company} ${email} ${number} ${message}`,
 		html: 
 			`
 				<p>${name} has submitted the contact form through Tmutla.com/contact!</p>
