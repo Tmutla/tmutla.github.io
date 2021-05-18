@@ -69,7 +69,7 @@ export default function ContactForm(props) {
 	useEffect(() => {
 
 	if (status.submitting) {
-		console.log('submitting')
+		// console.log('submitting')
 	}
 
 	if (status.submitted) {
