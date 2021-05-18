@@ -30,10 +30,10 @@ const staffLinks = [
     name: 'Joel Corey',
 		title: 'Web Developer',
 		blurb: `Some person, born on some date in Some city, with a passion for something.`,
-		linkedInHref: '',
-		githubHref: '',
-		twitterHref: '',
-		facebookHref: '',
+		linkedInHref: 'https://www.linkedin.com/in/joelcorey/',
+		githubHref: 'https://github.com/joelcorey',
+		twitterHref: 'https://twitter.com/joelcorey_',
+		facebookHref: 'https://www.facebook.com/joel.corey.129',
   },
 ]
 
