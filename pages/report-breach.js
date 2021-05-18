@@ -21,10 +21,14 @@ export default function Page() {
 				<Header />
 
 				<HeroTitle
-					title="CONTACT"
+					title="REPORT A BREACH"
 				/>
 				
-				<ContactForm />
+				<ContactForm 
+					contactTitle="Report a Breach"
+					contactMessage="Contact the Incident Response Team"
+					message="Please provide a brief description of the incident or breach"
+				/>
 				
       </main>
 
