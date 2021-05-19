@@ -25,18 +25,18 @@ const menuLinks = [
     href: '/services',
     icon: ChartBarIcon,
   },
-  {
-    name: 'EVENTS',
-    description: 'Participate in one of our events, ask questions, get involved, and learn.',
-    href: '/events',
-    icon: CursorClickIcon,
-  },
-  {
-    name: 'BLOG',
-    description: "See what we have been up to through out industry insights.",
-    href: '/blog',
-    icon: ViewGridIcon,
-  },
+  // {
+  //   name: 'EVENTS',
+  //   description: 'Participate in one of our events, ask questions, get involved, and learn.',
+  //   href: '/events',
+  //   icon: CursorClickIcon,
+  // },
+  // {
+  //   name: 'BLOG',
+  //   description: "See what we have been up to through out industry insights.",
+  //   href: '/blog',
+  //   icon: ViewGridIcon,
+  // },
   {
     name: 'RESOURCES',
     description: 'Build your knowledge through our expertise',
