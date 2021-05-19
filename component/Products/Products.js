@@ -17,24 +17,24 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const productLinks = [
-  {
-    name: 'PROGRAM ASSESSMENT + COMPLIANCE',
-    description: '',
-    href: '/solutions/program-compliance-assessment',
-    icon: ChartBarIcon,
-  },
+  // {
+  //   name: 'PROGRAM ASSESSMENT + COMPLIANCE',
+  //   description: '',
+  //   href: '/solutions/program-compliance-assessment',
+  //   icon: ChartBarIcon,
+  // },
   {
     name: 'SECURITY TESTING + ANALYSIS',
     description: '',
     href: '/solutions/cybersecurity-testing-analysis',
     icon: ShieldCheckIcon,
   },
-  {
-    name: 'SECURITY PROGRAM MANAGEMENT',
-    description: '',
-    href: '/solutions/cybersecurity-program-management',
-    icon: ViewGridIcon,
-  },
+  // {
+  //   name: 'SECURITY PROGRAM MANAGEMENT',
+  //   description: '',
+  //   href: '/solutions/cybersecurity-program-management',
+  //   icon: ViewGridIcon,
+  // },
   {
     name: 'INCIDENT RESPONSE + FORENSICS',
     description: 'Build your knowledge through our expertise',
