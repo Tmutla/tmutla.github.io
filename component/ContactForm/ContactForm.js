@@ -102,7 +102,7 @@ export default function ContactForm(props) {
 						<div class="flex flex-wrap -m-2">
 							<div class="p-2 w-1/2">
 								<div class="relative">
-									<label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+									<label htmlFor="name" class="leading-7 text-sm text-gray-600">Name</label>
 									<input 
 										type="text" 
 										id="name" 
@@ -116,7 +116,7 @@ export default function ContactForm(props) {
 							</div>
 							<div class="p-2 w-1/2">
 								<div class="relative">
-									<label for="company" class="leading-7 text-sm text-gray-600">Company</label>
+									<label htmlFor="company" class="leading-7 text-sm text-gray-600">Company</label>
 									<input 
 										type="text" 
 										id="company" 
@@ -130,7 +130,7 @@ export default function ContactForm(props) {
 							</div>
 							<div class="p-2 w-1/2">
 								<div class="relative">
-									<label for="email" class="leading-7 text-sm text-gray-600">Email Address</label>
+									<label htmlFor="email" class="leading-7 text-sm text-gray-600">Email Address</label>
 									<input 
 										type="email" 
 										id="email" 
@@ -144,7 +144,7 @@ export default function ContactForm(props) {
 							</div>
 							<div class="p-2 w-1/2">
 								<div class="relative">
-									<label for="number" class="leading-7 text-sm text-gray-600">Phone Number</label>
+									<label htmlFor="number" class="leading-7 text-sm text-gray-600">Phone Number</label>
 									<input 
 										type="text" 
 										id="number" 
@@ -158,7 +158,7 @@ export default function ContactForm(props) {
 							</div>
 							<div class="p-2 w-full">
 								<div class="relative">
-									<label for="message" class="leading-7 text-sm text-gray-600">{message}</label>
+									<label htmlFor="message" class="leading-7 text-sm text-gray-600">{message}</label>
 									<textarea 
 										id="message" 
 										name="message" 
