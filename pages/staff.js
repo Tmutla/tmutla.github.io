@@ -72,9 +72,9 @@ export default function Staff() {
 							{staffLinks.map((item) => (
 								<div class="p-4">
 									<div class="text-center mb-4 opacity-90">
-										<a href="#" class="block relative">
+										{/* <a href="#" class="block relative"> */}
 											<img alt="Staff profile picture" src={item.headshot} class="mx-auto object-cover rounded-full h-40 w-40 "/>
-										</a>
+										{/* </a> */}
 									</div>
 									<div class="text-center">
 										<p class="text-2xl text-gray-800 dark:text-white">
