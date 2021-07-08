@@ -37,12 +37,12 @@ const menuLinks = [
   //   href: '/events',
   //   icon: CursorClickIcon,
   // },
-  {
-    name: 'BLOG',
-    description: "See what we have been up to through out industry insights.",
-    href: '/blog',
-    icon: BookOpenIcon,
-  },
+  // {
+  //   name: 'BLOG',
+  //   description: "See what we have been up to through out industry insights.",
+  //   href: '/blog',
+  //   icon: BookOpenIcon,
+  // },
   {
     name: 'RESOURCES',
     description: 'Build your knowledge through our expertise',
