@@ -47,7 +47,7 @@ const menuLinks = [
     name: 'RESOURCES',
     description: 'Build your knowledge through our expertise',
     href: '/resources',
-    icon: BookOpenIcon,
+    icon: ViewGridIcon,
   },
 	{
     name: 'ABOUT',
