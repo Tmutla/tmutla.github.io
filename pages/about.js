@@ -25,7 +25,7 @@ export default function Page() {
 				<section className="text-gray-600 body-font">
 					<div className=" px-5 mx-auto flex flex-col">
 					
-					<p className="mt-10">More information coming soon. Stay tuned!</p>
+					<p className="mt-10">We are not TrustedSec.</p>
 					
 					</div>
 				</section>
