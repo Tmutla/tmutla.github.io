@@ -3,10 +3,16 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import {
+	AtSymbolIcon,
   BookmarkAltIcon,
+	BookOpenIcon,
   CalendarIcon,
   ChartBarIcon,
+	ChatIcon,
   CursorClickIcon,
+	DatabaseIcon,
+	EmojiHappyIcon,
+	LibraryIcon,
   MenuIcon,
   PhoneIcon,
   PlayIcon,
@@ -35,31 +41,31 @@ const menuLinks = [
     name: 'BLOG',
     description: "See what we have been up to through out industry insights.",
     href: '/blog',
-    icon: ViewGridIcon,
+    icon: BookOpenIcon,
   },
   {
     name: 'RESOURCES',
     description: 'Build your knowledge through our expertise',
     href: '/resources',
-    icon: RefreshIcon,
+    icon: BookOpenIcon,
   },
 	{
     name: 'ABOUT',
     description: 'Learn about us, who we are, and what we do',
     href: '/about',
-    icon: RefreshIcon,
+    icon: DatabaseIcon,
   },
 	{
     name: 'STAFF',
     description: 'Who we are as a company.',
     href: '/staff',
-    icon: RefreshIcon,
+    icon: EmojiHappyIcon,
   },
 	{
     name: 'CONTACT',
     description: 'Reach out and contact us',
     href: '/contact',
-    icon: RefreshIcon,
+    icon: ChatIcon,
   },
 ]
 
