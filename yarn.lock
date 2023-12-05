@@ -213,28 +213,28 @@
   resolved "https://registry.yarnpkg.com/@sanity/timed-out/-/timed-out-4.0.2.tgz#c9f61f9a1609baa1eb3e4235a24ea2a775022cdf"
   integrity sha512-NBDKGj14g9Z+bopIvZcQKWCzJq5JSrdmzRR1CS+iyA3Gm8SnIWBfZa7I3mTg2X6Nu8LQXG0EPKXdOGozLS4i3w==
 
-"@sendgrid/client@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.4.3.tgz#bc71aae05de2cd9aa607f4eb1d886711d09f9595"
-  integrity sha512-tTaHx893w5iqG0sVtUnMyRchuwYF95k4UOkmov1MouMIeMUbNvbalITo7cG7YSXUTY9rT2t4eBY6HcEBCVeqfg==
+"@sendgrid/client@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-8.0.0.tgz#9ca4b90e8768f411e9ebd45a793f13260f86c69f"
+  integrity sha512-+7ksiRhmrNbZ+nu6Z0OpkUQLYvtA8ulLvjabVVz/F/8erHIh19cbzU1PgZ/t7gVAqaU2Sd9jAMfcoKbaDLWO/Q==
   dependencies:
-    "@sendgrid/helpers" "^7.4.3"
-    axios "^0.21.1"
+    "@sendgrid/helpers" "^8.0.0"
+    axios "^1.6.0"
 
-"@sendgrid/helpers@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-7.4.3.tgz#231a4405266cfa291054df8b668fe3a4dc9387aa"
-  integrity sha512-Wt+68g1sVEM5UspJh34O/cxtv6BBbtAIk7U9B3PB2ySOtPs9e6hI1QkgYVwpNmkt7k2p86muUNyma/Aig25agg==
+"@sendgrid/helpers@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-8.0.0.tgz#f74bf9743bacafe4c8573be46166130c604c0fc1"
+  integrity sha512-Ze7WuW2Xzy5GT5WRx+yEv89fsg/pgy3T1E3FS0QEx0/VvRmigMZ5qyVGhJz4SxomegDkzXv/i0aFPpHKN8qdAA==
   dependencies:
     deepmerge "^4.2.2"
 
-"@sendgrid/mail@^7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-7.4.4.tgz#cc31915342d0233592baa6e80b74beaf32e0bf2b"
-  integrity sha512-9+dyArajxbPY7eJJAd2eps7MVsXW9E4Y294gWeMYku0/Id/qAivexidjstvkkVlZdlrHbEsGDlnMEcw2eXOiFg==
+"@sendgrid/mail@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-8.0.0.tgz#7e47fc2da6db7149ebc82d839e12ebb651597760"
+  integrity sha512-ePir+LT6kzJ7yaWAFuo8R+N9Pjm3KQMV5NpJ9XuTaLwwuXrUBiPzFo953Qc7slsYf7AKhMurF4w+ta4v1nsJ7A==
   dependencies:
-    "@sendgrid/client" "^7.4.3"
-    "@sendgrid/helpers" "^7.4.3"
+    "@sendgrid/client" "^8.0.0"
+    "@sendgrid/helpers" "^8.0.0"
 
 "@types/node@*":
   version "15.0.3"
@@ -330,6 +330,11 @@ ast-types@0.13.2:
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.13.2.tgz#df39b677a911a83f3a049644fb74fdded23cea48"
   integrity sha512-uWMHxJxtfj/1oZClOxDEV1sQ1HCDkA4MG8Gr69KKeBjEVH0R84WlejZ0y2DcwyBlpAEMltmVYkVgqfLFb2oyiA==
 
+asynckit@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+
 at-least-node@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
@@ -354,12 +359,14 @@ available-typed-arrays@^1.0.2:
   dependencies:
     array-filter "^1.0.0"
 
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+axios@^1.6.0:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
+  integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 babel-plugin-syntax-jsx@6.18.0:
   version "6.18.0"
@@ -658,6 +665,13 @@ colorette@^1.2.2:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
 
+combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  dependencies:
+    delayed-stream "~1.0.0"
+
 commander@^6.0.0:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
@@ -821,6 +835,11 @@ defined@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
   integrity sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
+
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
 
 depd@~1.1.2:
   version "1.1.2"
@@ -1027,7 +1046,12 @@ find-up@^4.0.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-follow-redirects@^1.10.0, follow-redirects@^1.2.4:
+follow-redirects@^1.15.0:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
+  integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
+
+follow-redirects@^1.2.4:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
@@ -1036,6 +1060,15 @@ foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
   integrity sha1-C+4AUBiusmDQo6865ljdATbsG5k=
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 form-urlencoded@^2.0.7:
   version "2.0.9"
@@ -1613,6 +1646,18 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
+mime-db@1.52.0:
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
+  integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
+
+mime-types@^2.1.12:
+  version "2.1.35"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
+  integrity sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
+  dependencies:
+    mime-db "1.52.0"
+
 mimic-response@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
@@ -2066,6 +2111,11 @@ prop-types@15.7.2, prop-types@^15.6.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
+
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 public-encrypt@^4.0.0:
   version "4.0.3"
